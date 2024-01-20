@@ -46,15 +46,6 @@ for (let i = 0; i < teamMembers.length; i++) {
     console.log(member);
     const {fullname, role, image} = member;
     console.log(fullname, role, image);
-   let list = `<ul class="list">`;
-   teamMembers.forEach (member => {
-    list += `<li>${member.fullname}</li>
-    <li>${member.role}</li>
-    <li><img src="img/${member.image}" alt="member.fullname"></li>`;
-   })
-   
-   
-   list += `</ul>`;
-   sectionElement.innerHTML = list;
+    createList();
 
 }
