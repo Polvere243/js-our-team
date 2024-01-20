@@ -50,7 +50,7 @@ for (let i = 0; i < teamMembers.length; i++) {
    teamMembers.forEach (member => {
     list += `<li>${member.fullname}</li>
     <li>${member.role}</li>
-    <li>${member.image}</li>`;
+    <li><img src="img/${member.image}" alt="member.fullname"></li>`;
    })
    
    
