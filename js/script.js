@@ -1,3 +1,6 @@
+// recupero l'elemento dal DOM
+const sectionElement = document.querySelector("section");
+
 // creo un array di oggetti
 const teamMembers = [
     {
@@ -32,7 +35,7 @@ const teamMembers = [
     }
 ];
 
-
+// stampo in console 
 /* 
 for (let i = 0; i < teamMembers.length; i++) {
     console.log(teamMembers[i]);
@@ -41,5 +44,17 @@ for (let i = 0; i < teamMembers.length; i++) {
 for (let i = 0; i < teamMembers.length; i++) {
     const member = teamMembers[i];
     console.log(member);
-    for (let member in teamMembers)
+    const {fullname, role, image} = member;
+    console.log(fullname, role, image);
+   let list = `<ul class="list">`;
+   teamMembers.forEach (member => {
+    list += `<li>${member.fullname}</li>
+    <li>${member.role}</li>
+    <li>${member.image}</li>`;
+   })
+   
+   
+   list += `</ul>`;
+   sectionElement.innerHTML = list;
+
 }
