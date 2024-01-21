@@ -9,5 +9,5 @@ const createList = (member) => {
    
    
    list += `</ul>`;
-   sectionElement.innerHTML = list;
+   rowElement.innerHTML = list;
 }

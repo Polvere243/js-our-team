@@ -1,5 +1,5 @@
 // recupero l'elemento dal DOM
-const sectionElement = document.querySelector("section");
+const rowElement = document.querySelector(".row");
 
 // creo un array di oggetti
 const teamMembers = [
