@@ -41,11 +41,11 @@ for (let i = 0; i < teamMembers.length; i++) {
     console.log(teamMembers[i]);
 } */
 
-for (let i = 0; i < teamMembers.length; i++) {
+/* for (let i = 0; i < teamMembers.length; i++) {
     const member = teamMembers[i];
     console.log(member);
     const {fullname, role, image} = member;
     console.log(fullname, role, image);
     createList();
 
-}
+} */
