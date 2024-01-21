@@ -49,3 +49,21 @@ for (let i = 0; i < teamMembers.length; i++) {
     createList();
 
 } */
+
+let cards = ``;
+
+teamMembers.forEach (member => {
+    cards += `
+    <div class="col">
+        <div class="card">
+            <figure>
+                <img src="img/${member.image}" alt="">
+                <figcaption>
+                    <h3>${member.fullname}</h3>
+                    <address>${member.role}</address>
+                </figcaption>
+            </figure>
+        </div>
+    </div>`
+    rowElement.innerHTML = cards;
+})
